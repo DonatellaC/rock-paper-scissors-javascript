@@ -23,3 +23,178 @@ body {
   background-color: black;
   min-height: 100vh;
 }
+
+/***********IMAGES***********/
+
+.choicesComp,
+.choices {
+  display: grid;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+  background: none;
+}
+
+.choices {
+  cursor: pointer;
+}
+
+.choicesComp img,
+.choices img {
+  margin-right: 40px;
+  margin-left: 40px;
+  max-width: 40%;
+  min-width: 100px;
+  border-radius: 80%;
+  position: relative;
+  display: inline-block;
+}
+
+#Rock {
+  position: absolute;
+  left: 300px;
+}
+
+#Paper {
+  position: absolute;
+  left: 600px;
+}
+
+#Scissors {
+  position: absolute;
+  left: 900px;
+}
+
+/***********SCORES***********/
+
+.randomPlay {
+  font-weight: bold;
+  text-align: center;
+  margin: 20 40 px;
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  bottom: 200px;
+}
+
+.score,
+.scoreComputers {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  left: 500px;
+  width: 350px;
+  max-width: 80%;
+  position: absolute;
+  padding: 20px;
+  top: 400px;
+}
+
+#player_score,
+#computer_score,
+#computer_score1,
+#computer_score2 {
+  padding: 10px;
+}
+
+/***********PLAY MESSAGE - RESULTS***********/
+.result,
+.resultComp {
+  color: white;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  top: 200px;
+  left: 20px;
+}
+
+/***********BUTTONS PLAY - RESET -***********/
+
+.randomPlay:hover,
+.restart:hover,
+.reset_newGameC:hover,
+.restart_newGameP:hover,
+.computers_play:hover {
+  box-shadow: 0px 0px 20px 1px rgb(245, 245, 191);
+}
+
+.computers_play,
+.restart,
+.reset_newGameC,
+.restart_newGameP,
+.randomPlay {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  bottom: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  position: absolute;
+}
+
+.computers_play,
+.restart {
+  right: 30px;
+}
+
+.reset_newGameC {
+  right: 235px;
+}
+
+.restart_newGameP {
+  right: 260px;
+}
+
+.randomPlay {
+  right: 305px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(168, 145, 16);
+}
+
+.computers_play,
+.restart,
+.reset_newGameC,
+.restart_newGameP {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.selectionCvC {
+  display: none;
+}
+
+/***********FOOTER***********/
+
+footer {
+  min-width: 100vw;
+  position: relative;
+  margin: 0 auto 0 auto;
+  top: 260px;
+  text-align: center;
+  color: #cecb37;
+}
+
+footer p {
+  font-size: 15px;
+  left: 10px;
+}
+
+footer a {
+  color: #cecb37;
+}

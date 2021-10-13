@@ -1,7 +1,7 @@
-let playerScore = "";
-let computerScore = "";
-let computer_score1 = "";
-let computer_score2 = "";
+let playerScore = 0
+let computerScore = 0
+let computer_score1 = 0
+let computer_score2 = 0
 let scores = {};
 let scoreComputers = {};
 const player_score_span = document.getElementById("player_score");
@@ -15,6 +15,7 @@ const scissors_div = document.getElementById("Scissors");
 const choicesComp_div = document.getElementById("choicesComp");
 const computers_play_but = document.getElementById("computers_play");
 const restart_newGameP = document.getElementById("restart_newGameP");
+const restart_but = document.getElementById("restart");
 const randomPlay_but = document.getElementById("randomPlay");
 const reset_newGameC_but = document.getElementById("reset_newGameC");
 const selectionCvC_div = document.getElementById("selectionCvC");
@@ -22,6 +23,7 @@ const home_div = document.getElementById("home");
 const scoreComputers_div = document.getElementById("scoreComputers");
 const computer_score1_span = document.getElementById("computer_score1");
 const computer_score2_span = document.getElementById("computer_score2");
+const button_container = document.getElementById("button_container");
 
 //reset score Computers
 const resetScoresComp = () => {
@@ -43,13 +45,13 @@ const resetScores = () => {
 
 //go back to homepage
 restart.addEventListener("click", () => {
-  home_div.style.display = "flex";
+  home_div.style.display = "block";
   selectionCvC_div.style.display = "none";
 });
 
 computers_play.addEventListener("click", () => {
   home_div.style.display = "none";
-  selectionCvC_div.style.display = "flex";
+  selectionCvC_div.style.display = "block";
 });
 
 //random choices Computer

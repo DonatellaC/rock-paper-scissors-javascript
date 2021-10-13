@@ -19,70 +19,80 @@
   </header>
 
   <!-- Home -- PlayerVsComputer-->
-  <div class="home" id="home">
+    <div class="home" id="home">
+      <div>
+        <div class="score">
+          <h2 class="score_title">SCORE</h2>
+          <span id="player_score">Player: 0 </span>
+          <span id="computer_score">Computer: 0 </span>
+        </div>
 
-    <div class="flex-container choices" id="choices">
-      <div id="Rock" class="choice">
-        <img id="rockImg" src="/Images/Rock.PNG" alt="rock-image" />
+        <div class="result">
+          <p>Let's start the game!</p>
+        </div>
+
+        <div class="choices" id="choices">
+          <div id="Rock" class="choice">
+            <img id="rockImg" src="/Images/Rock.PNG" alt="rock-image" />
+          </div>
+          <div id="Paper" class="choice">
+            <img id="paperImg" src="/Images/Paper.PNG" alt="rock-paper" />
+          </div>
+          <div id="Scissors" class="choice">
+            <img
+              id="scissorsImg"
+              src="/Images/Scissors.PNG"
+              alt="rock-scissors"
+            />
+          </div>
+        </div>
       </div>
-      <div id="Paper" class="choice">
-        <img id="paperImg" src="/Images/Paper.PNG" alt="rock-paper" />
-      </div>
-      <div id="Scissors" class="choice">
-        <img id="scissorsImg" src="/Images/Scissors.PNG" alt="rock-scissors" />
-      </div>
-    </div>
 
-    <div class="result">
-      <p>Let's start the game!</p>
-    </div>
-
-    <div class="score">
-      <h2>SCORE</h2>
-      <span id="player_score">Player: 0 </span>
-      <span id="computer_score">Computer: 0 </span>
-    </div>
-
-    <button class="restart_newGameP" id="restart_newGameP">
-      Reset
-    </button>
-    <button id="computers_play" class="computers_play">
-      Play Computer vs Computer
-    </button>
-  </div>
-
-  <!--ComputerVsComputer -->
-  <div class="selectionCvC" id="selectionCvC">
-
-    <div class="flex-container choicesComp" id="choicesComp">
-
-      <div id="Rock" class="random-choice">
-        <img id="rockImg" src="/Images/Rock.PNG" alt="rock-image" />
-      </div>
-      <div id="Paper" class="random-choice">
-        <img id="paperImg" src="/Images/Paper.PNG" alt="paper-image" />
-      </div>
-      <div id="Scissors" class="random-choice">
-        <img id="scissorsImg" src="/Images/Scissors.PNG" alt="scissors-image" />
+      <div class="button_container" id="button_container">
+        <button class="restart_newGameP" id="restart_newGameP">Reset</button>
+        <button id="computers_play" class="computers_play">
+          Play Computer vs Computer
+        </button>
       </div>
     </div>
 
-    <div class="resultComp">
-      <p>Let's start the game!</p>
+    <!--ComputerVsComputer -->
+    <div class="selectionCvC" id="selectionCvC">
+      <div>
+        <div class="scoreComputers" id="scoreComputers">
+          <h2 class="score_title">SCORE</h2>
+          <span id="computer_score1">Computer A: 0 </span>
+          <span id="computer_score2">Computer B: 0 </span>
+        </div>
+
+        <div class="resultComp">
+          <p>Let's start the game!</p>
+        </div>
+
+        <div class="choicesComp" id="choicesComp">
+          <div id="Rock" class="random-choice">
+            <img id="rockImg" src="/Images/Rock.PNG" alt="rock-image" />
+          </div>
+          <div id="Paper" class="random-choice">
+            <img id="paperImg" src="/Images/Paper.PNG" alt="paper-image" />
+          </div>
+          <div id="Scissors" class="random-choice">
+            <img
+              id="scissorsImg"
+              src="/Images/Scissors.PNG"
+              alt="scissors-image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="button_container_computers">
+        <button class="randomPlay" id="randomPlay">PLAY!</button>
+        <button class="reset_newGameC" id="reset_newGameC">Reset</button>
+        <button class="restart" id="restart">Play Player vs Computer</button>
+      </div>
     </div>
-
-    <div class="scoreComputers" id="scoreComputers">
-      <h2>SCORE</h2>
-      <span id="computer_score1">Computer A: 0 </span>
-      <span id="computer_score2">Computer B: 0 </span>
-    </div>
-
-    <button class="randomPlay" id="randomPlay">PLAY!</button>
-    <button class="restart" id="restart">Play Player vs Computer</button>
-    <button class="reset_newGameC" id="reset_newGameC">Reset</button>
-
-  </div>
-</body>
+  </body>
 <footer>
   <p>
     Made with ❤ by

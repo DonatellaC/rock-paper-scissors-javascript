@@ -4,7 +4,9 @@ header {
   background-color: transparent;
   padding: 30px;
   margin: 0 auto 0 auto;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -28,41 +30,20 @@ body {
 
 .choicesComp,
 .choices {
-  display: grid;
   border: none;
   outline: none;
   font-size: 5rem;
   background: none;
-}
-
-.choices {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.choicesComp img,
-.choices img {
-  margin-right: 40px;
-  margin-left: 40px;
-  max-width: 40%;
-  min-width: 100px;
-  border-radius: 80%;
-  position: relative;
-  display: inline-block;
-}
-
-#Rock {
-  position: absolute;
-  left: 300px;
-}
-
-#Paper {
-  position: absolute;
-  left: 600px;
-}
-
-#Scissors {
-  position: absolute;
-  left: 900px;
+.choice,
+.random-choice {
+  margin: 40px auto;
 }
 
 /***********SCORES***********/
@@ -73,8 +54,6 @@ body {
   margin: 20 40 px;
   padding: 20px;
   background-color: white;
-  position: fixed;
-  bottom: 200px;
 }
 
 .score,
@@ -83,13 +62,10 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   text-align: center;
-  margin: 0 auto 0 auto;
-  left: 500px;
-  width: 350px;
-  max-width: 80%;
-  position: absolute;
+  margin: 40px auto 20px auto;
   padding: 20px;
-  top: 400px;
+  border: 1px solid white;
+  width: 285px;
 }
 
 #player_score,
@@ -103,7 +79,6 @@ body {
 .result,
 .resultComp {
   color: white;
-  position: relative;
   width: 100%;
   text-align: center;
 }
@@ -112,11 +87,11 @@ p {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  position: relative;
-  display: inline-block;
-  margin: 0 auto 0 auto;
-  top: 200px;
-  left: 20px;
+  margin: 40px 0;
+}
+
+.score_title {
+  margin-top: 0;
 }
 
 /***********BUTTONS PLAY - RESET -***********/
@@ -141,30 +116,6 @@ p {
   padding: 10px 10px;
   bottom: 100px;
   cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  position: absolute;
-}
-
-.computers_play,
-.restart {
-  right: 30px;
-}
-
-.reset_newGameC {
-  right: 235px;
-}
-
-.restart_newGameP {
-  right: 260px;
-}
-
-.randomPlay {
-  right: 305px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: rgb(168, 145, 16);
 }
 
 .computers_play,
@@ -173,21 +124,39 @@ p {
 .restart_newGameP {
   font-size: 15px;
   font-weight: bold;
+  margin: 5px;
+}
+
+.randomPlay {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(168, 145, 16);
+  margin: 5px;
 }
 
 .selectionCvC {
   display: none;
 }
 
+.button_container,
+.button_container_computers {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
 /***********FOOTER***********/
 
 footer {
+  display: flex;
+  justify-content: center;
   min-width: 100vw;
-  position: relative;
-  margin: 0 auto 0 auto;
-  top: 260px;
+  margin-top: 20px;
   text-align: center;
   color: #cecb37;
+  padding-top: 20px;
 }
 
 footer p {
